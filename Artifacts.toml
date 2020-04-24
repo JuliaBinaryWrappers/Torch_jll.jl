@@ -1,0 +1,10 @@
+[[Torch]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "d6ce2ca09ab00964151aaeae71179deb8f9800d1"
+libc = "glibc"
+os = "linux"
+
+    [[Torch.download]]
+    sha256 = "ce9230a160107ab415f8039450e2edc89611079dcd6fc6261438c543a48c6279"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.4.0+0/Torch.v1.4.0.x86_64-linux-gnu-cxx11.tar.gz"
