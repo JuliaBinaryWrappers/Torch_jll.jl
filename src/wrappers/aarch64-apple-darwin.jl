@@ -8,11 +8,12 @@ using Gloo_jll
 using PThreadPool_jll
 using SLEEF_jll
 using XNNPACK_jll
+using protoc_jll
 JLLWrappers.@generate_wrapper_header("Torch")
 JLLWrappers.@declare_library_product(libtorch, "@rpath/libtorch.1.10.dylib")
 JLLWrappers.@declare_library_product(libtorch_cpu, "@rpath/libtorch_cpu.1.10.dylib")
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, blis_jll, CPUInfo_jll, Gloo_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, blis_jll, CPUInfo_jll, Gloo_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll, protoc_jll)
     JLLWrappers.@init_library_product(
         libtorch,
         "lib/libtorch.1.10.0.dylib",

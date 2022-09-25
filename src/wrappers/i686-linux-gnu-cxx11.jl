@@ -7,11 +7,12 @@ using MKL_jll
 using PThreadPool_jll
 using SLEEF_jll
 using XNNPACK_jll
+using protoc_jll
 JLLWrappers.@generate_wrapper_header("Torch")
 JLLWrappers.@declare_library_product(libtorch, "libtorch.so.1.10")
 JLLWrappers.@declare_library_product(libtorch_cpu, "libtorch_cpu.so.1.10")
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, CPUInfo_jll, MKL_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, CPUInfo_jll, MKL_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll, protoc_jll)
     JLLWrappers.@init_library_product(
         libtorch,
         "lib/libtorch.so",
