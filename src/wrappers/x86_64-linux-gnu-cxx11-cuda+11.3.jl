@@ -3,21 +3,22 @@ export declarations_yaml, libtorch, libtorch_cpu
 
 using CompilerSupportLibraries_jll
 using CPUInfo_jll
-using CUDNN_jll
 using Gloo_jll
 using LAPACK_jll
+using NVTX_jll
 using OpenBLAS32_jll
 using PThreadPool_jll
 using SLEEF_jll
 using XNNPACK_jll
 using protoc_jll
 using CUDA_Runtime_jll
+using CUDNN_jll
 JLLWrappers.@generate_wrapper_header("Torch")
 JLLWrappers.@declare_file_product(declarations_yaml)
 JLLWrappers.@declare_library_product(libtorch, "libtorch.so.1.10")
 JLLWrappers.@declare_library_product(libtorch_cpu, "libtorch_cpu.so.1.10")
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, CPUInfo_jll, CUDNN_jll, Gloo_jll, LAPACK_jll, OpenBLAS32_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll, protoc_jll, CUDA_Runtime_jll)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, CPUInfo_jll, Gloo_jll, LAPACK_jll, NVTX_jll, OpenBLAS32_jll, PThreadPool_jll, SLEEF_jll, XNNPACK_jll, protoc_jll, CUDA_Runtime_jll, CUDNN_jll)
     JLLWrappers.@init_file_product(
         declarations_yaml,
         "share/ATen/Declarations.yaml",

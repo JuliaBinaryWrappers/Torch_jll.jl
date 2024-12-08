@@ -1,12 +1,49 @@
 [[Torch]]
-arch = "aarch64"
-git-tree-sha1 = "e34aada1d8303c29ea8aedbe523688ca71cc5f65"
+arch = "i686"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "9302210a00165e6a71a219b46d1704f79295824d"
 lazy = true
-os = "macos"
+libc = "glibc"
+os = "linux"
 
     [[Torch.download]]
-    sha256 = "249cd9e28cb1da3a1f9a67ab29cca861b792127da0b230ce8e50ce50a889c2e2"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.aarch64-apple-darwin.tar.gz"
+    sha256 = "8183cef07fc29cd7d60b21bde82436cfd3a1e4a10f985c5f849f46706135e7da"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.i686-linux-gnu-cxx03.tar.gz"
+[[Torch]]
+arch = "i686"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "5d5f33afd0f8354a35e955945b6e709baa6ca0be"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Torch.download]]
+    sha256 = "7a6ef79d8c617d7e96f39dc7e0ab7001ef4e52684a815254f67255cf36e25dd0"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.i686-linux-gnu-cxx11.tar.gz"
+[[Torch]]
+arch = "x86_64"
+cuda = "none"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "8e40d662589bc2752ec2c94c3cb0105349bebd47"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Torch.download]]
+    sha256 = "1825ad0fea82c37a71f0e88f6f5330fd98b3f65464c098a509c675b12798df39"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx03-cuda+none.tar.gz"
+[[Torch]]
+arch = "x86_64"
+cuda = "none"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "7f6dc97944f8487286deebdbe764cd776df6965a"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Torch.download]]
+    sha256 = "4dfa78041fcc1e1b066d940b24950dcb672010d6321cdd4bd80766e059b924c1"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx11-cuda+none.tar.gz"
 [[Torch]]
 arch = "aarch64"
 cxxstring_abi = "cxx03"
@@ -17,7 +54,7 @@ os = "linux"
 
     [[Torch.download]]
     sha256 = "cb37ac73f46ad75be6fb094b4e99aa0b8941519c3e27bc6365dc05377c664358"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.aarch64-linux-gnu-cxx03.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.aarch64-linux-gnu-cxx03.tar.gz"
 [[Torch]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
@@ -28,29 +65,7 @@ os = "linux"
 
     [[Torch.download]]
     sha256 = "9fdd4b73737698b7e297690bf7b8fb2f3f89a6425c84a8ec724c7e16a0507022"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.aarch64-linux-gnu-cxx11.tar.gz"
-[[Torch]]
-arch = "i686"
-cxxstring_abi = "cxx03"
-git-tree-sha1 = "b26e5bb21c6ac9eec5586f230e115352ade9f50f"
-lazy = true
-libc = "glibc"
-os = "linux"
-
-    [[Torch.download]]
-    sha256 = "423019ab1581faed8abf5ebbc6c489a6e6b08f80e48e4fe75b634a6c84a3b777"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.i686-linux-gnu-cxx03.tar.gz"
-[[Torch]]
-arch = "i686"
-cxxstring_abi = "cxx11"
-git-tree-sha1 = "084104f2ea62f49f90e96ba06bac357b2b95213a"
-lazy = true
-libc = "glibc"
-os = "linux"
-
-    [[Torch.download]]
-    sha256 = "54e501ea3abf0c2855b34e41386f9f362167ac1bba31d0608c8485b6446e7827"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.i686-linux-gnu-cxx11.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.aarch64-linux-gnu-cxx11.tar.gz"
 [[Torch]]
 arch = "x86_64"
 git-tree-sha1 = "c52da90f09fa4cfdcdfc8f8aee5085c71024c631"
@@ -59,74 +74,61 @@ os = "macos"
 
     [[Torch.download]]
     sha256 = "d38048c63e09d21338de85a76bba781eee0eb86e0eb3402e70401418ef7b717a"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-apple-darwin.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-apple-darwin.tar.gz"
 [[Torch]]
-arch = "x86_64"
-cxxstring_abi = "cxx03"
-git-tree-sha1 = "fb7a49a5155ed82846bda77f11de1975c5620e28"
+arch = "aarch64"
+git-tree-sha1 = "e34aada1d8303c29ea8aedbe523688ca71cc5f65"
 lazy = true
-libc = "glibc"
-os = "linux"
+os = "macos"
 
     [[Torch.download]]
-    sha256 = "b43b7cd474b8604e6798b3e46124bda414991adecb91c59116453319b72384c2"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx03.tar.gz"
+    sha256 = "249cd9e28cb1da3a1f9a67ab29cca861b792127da0b230ce8e50ce50a889c2e2"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.aarch64-apple-darwin.tar.gz"
 [[Torch]]
 arch = "x86_64"
 cuda = "10.2"
 cxxstring_abi = "cxx03"
-git-tree-sha1 = "1b9c42783ccd9d1904f66778acc142f987828792"
+git-tree-sha1 = "d55d5e46605b798bab0a5662d679a048523ae2eb"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Torch.download]]
-    sha256 = "68f5067bf9b91291457c216bd6beae1afc45c605853a5bd26bbbf56c21e3b097"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx03-cuda+10.2.tar.gz"
-[[Torch]]
-arch = "x86_64"
-cuda = "11.3"
-cxxstring_abi = "cxx03"
-git-tree-sha1 = "1bcd9e6884cd8dc876ee1c2f93bd9f711b1b723a"
-lazy = true
-libc = "glibc"
-os = "linux"
-
-    [[Torch.download]]
-    sha256 = "35ab2a2cf6ebf2fc7fb47b477ce8f2132c271e362207f7f29138b24a524eec7f"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx03-cuda+11.3.tar.gz"
-[[Torch]]
-arch = "x86_64"
-cxxstring_abi = "cxx11"
-git-tree-sha1 = "0a3b1ee6ebcc41efb147b7a98d91529c76ee3eae"
-lazy = true
-libc = "glibc"
-os = "linux"
-
-    [[Torch.download]]
-    sha256 = "413be57d3f204564f5ef82c4ad6e3b0e30802f9a034229894a0644d31503a5ce"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx11.tar.gz"
+    sha256 = "700086e2660c1d1f8dc59792878f9cd03efd37a8cd478ede428485a58a1b9116"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx03-cuda+10.2.tar.gz"
 [[Torch]]
 arch = "x86_64"
 cuda = "10.2"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "1f0c4c7779b8859b883ad86187dadc5bc49af817"
+git-tree-sha1 = "4d9dafbaae4f0f96a9531fb62d87b373e6541600"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Torch.download]]
-    sha256 = "d0434245d68c4c62d5a53c0570decae1ba3bc983abf8fcf2c5045ece53900999"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx11-cuda+10.2.tar.gz"
+    sha256 = "95ff2d8f5b70db3926177e2305b866b0711a55d37eff602817194bdc5b75bcd8"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx11-cuda+10.2.tar.gz"
+[[Torch]]
+arch = "x86_64"
+cuda = "11.3"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "649afffafd48e5c4b92718721e2b6628dd95c89f"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Torch.download]]
+    sha256 = "cc5fdcde1f1fe0a0b8855555c4884587f6ee1889f59c18a4398cc5f7424cc8da"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx03-cuda+11.3.tar.gz"
 [[Torch]]
 arch = "x86_64"
 cuda = "11.3"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "31474c400779e97beb4c9c895be2482342c00150"
+git-tree-sha1 = "df751aad1e240ec7b9143977a6bd097fe1af3764"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Torch.download]]
-    sha256 = "fc2259113e6db8fed380d53383a72909174e2bfef2a4928dd456a4a8f63e09b2"
-    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+0/Torch.v1.10.2.x86_64-linux-gnu-cxx11-cuda+11.3.tar.gz"
+    sha256 = "099c0fbbea7c9c7106fbd56a57952975edfae305266993ee6e3abd46b17789e2"
+    url = "https://github.com/JuliaBinaryWrappers/Torch_jll.jl/releases/download/Torch-v1.10.2+1/Torch.v1.10.2.x86_64-linux-gnu-cxx11-cuda+11.3.tar.gz"
